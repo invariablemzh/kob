@@ -24,6 +24,7 @@ public class BotInfoController {
         list.add(bot1);
         list.add(bot2);
         return list;
+
     }
 
 
