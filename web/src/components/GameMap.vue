@@ -1,6 +1,6 @@
 <template>
     <div ref="parent" class="gamemap">
-        <canvas ref="canvas"></canvas>
+        <canvas ref="canvas" tabindex="0"></canvas>
     </div>
 </template>
 
@@ -36,7 +36,7 @@ div.gamemap {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 
