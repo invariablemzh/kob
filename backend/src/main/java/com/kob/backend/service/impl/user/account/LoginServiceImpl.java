@@ -22,16 +22,16 @@ public class LoginServiceImpl implements LoginService {
     @Override
     public Map<String, String> getToken(String username, String password) {
         UsernamePasswordAuthenticationToken authenticationToken =
-                new UsernamePasswordAuthenticationToken(username,password);
+                new UsernamePasswordAuthenticationToken(username, password);
 
-        Authentication authenticate = authenticationManager.authenticate(authenticationToken);  //登录失败会自动处理
-        UserDetailsImpl loginuser = (UserDetailsImpl) authenticate.getPrincipal();
-        User user = loginuser.getUser();
+        Authentication authenticate = authenticationManager.authenticate(authenticationToken);  // 登录失败，会自动处理
+        UserDetailsImpl loginUser = (UserDetailsImpl) authenticate.getPrincipal();
+        User user = loginUser.getUser();
         String jwt = JwtUtil.createJWT(user.getId().toString());
 
-        Map<String,String> map = new HashMap<>();
+        Map<String, String> map = new HashMap<>();
         map.put("error_message", "success");
-        map.put("token",jwt);
+        map.put("token", jwt);
 
         return map;
     }

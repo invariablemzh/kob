@@ -13,7 +13,7 @@ public class InfoController {
     private InfoService infoService;
 
     @GetMapping("/user/account/info/")
-    public Map<String,String> getinfo(){
+    public Map<String, String> getinfo() {
         return infoService.getinfo();
     }
 }

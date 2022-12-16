@@ -20,10 +20,10 @@
 </template>
 
 <script>
-import ContentField from '@/components/ContentField.vue'
+import ContentField from '../../../components/ContentField.vue'
 import { useStore } from 'vuex'
 import { ref } from 'vue'
-import router from '@/router/index'
+import router from '../../../router/index'
 
 export default {
     components: {

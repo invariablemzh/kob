@@ -1,20 +1,20 @@
 import { AcGameObject } from "./AcGameObject";
 
-export class Wall extends AcGameObject{
-    constructor(r, c, gamemap){
+export class Wall extends AcGameObject {
+    constructor(r, c, gamemap) {
         super();
 
         this.r = r;
         this.c = c;
         this.gamemap = gamemap;
-        this.color = "black";
+        this.color = "#B37226";
     }
 
-    update(){
+    update() {
         this.render();
     }
 
-    render(){
+    render() {
         const L = this.gamemap.L;
         const ctx = this.gamemap.ctx;
 

@@ -4,14 +4,12 @@
     </div>
 </template>
 
-
-
 <script>
-import { GameMap } from '../assets/scripts/GameMap';
+import { GameMap } from "@/assets/scripts/GameMap";
 import { ref, onMounted } from 'vue'
 
-export default{
-    setup(){
+export default {
+    setup() {
         let parent = ref(null);
         let canvas = ref(null);
 
@@ -25,10 +23,7 @@ export default{
         }
     }
 }
-    
 </script>
-
-
 
 <style scoped>
 div.gamemap {
@@ -38,6 +33,4 @@ div.gamemap {
     justify-content: center;
     align-items: center;
 }
-
-
 </style>
