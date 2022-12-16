@@ -1,21 +1,16 @@
 <template>
-    <play-ground></play-ground>
+    <PlayGround />
 </template>
-
 
 <script>
 import PlayGround from '../../components/PlayGround.vue'
 
-
-export default{
-    components:{
+export default {
+    components: {
         PlayGround
     }
 }
-
-
 </script>
 
 <style scoped>
-
 </style>
